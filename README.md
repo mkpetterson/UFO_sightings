@@ -54,7 +54,7 @@ The cleaned up pandas dataframe is shown below
 The sightings described the UFOs as various different shapes, including circles, chevrons, lights, or fireballs. The duration of the sightings lasted from a few seconds to many minutes. 
 
 
-Shapes and Duration
+**Shapes and Duration**
 <img alt="shapes" src='images/shape_duration.png' style='width: 600px;'>
 
 
@@ -62,6 +62,11 @@ The time of day for the observations were also interesting. Sightings tended to 
 
 <img alt="timeofday" src='images/time_of_day.png'>
 
+**State**
+
+We got a count of the states and sightings. It seems California is number one for UFO sightings.
+
+<img alt="state_count" src='images/state_counts.png'>
 
 
 ## Natural Language Processing
