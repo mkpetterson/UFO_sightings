@@ -7,7 +7,11 @@
 
 ## Table of Contents
 
+- <a href="https://github.com/mkpetterson/UFO_sightings#Introduction">Introduction</a> 
+- <a href="https://github.com/mkpetterson/UFO_sightings#exploratory-data-analysis-and-data-preparation">Exploratory Data Analysis and Data Preparation</a> 
 
+- <a href="https://github.com/mkpetterson/UFO_sightings#natural-language-processing">Natural Language Processing</a> 
+- <a href="https://github.com/mkpetterson/UFO_sightings#summary-and-key-findings">Summary and Key Findings</a>
 
 
 ## Introduction
