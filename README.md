@@ -3,7 +3,7 @@
 ![badge](https://img.shields.io/badge/last%20modified-may%20%202020-success)
 ![badge](https://img.shields.io/badge/status-in%20progress-yellow)
 
-<a href="https://github.com/cwong90">Cindy Wong</a> | <a href="https://github.com/oro13">Feli Gentle</a> | <a href="https://github.com/mkpetterson">Maureen Petterson</a>
+<a href="https://github.com/cwong690">Cindy Wong</a> | <a href="https://github.com/oro13">Feli Gentle</a> | <a href="https://github.com/mkpetterson">Maureen Petterson</a>
 
 ## Table of Contents
 
@@ -24,9 +24,12 @@ The data was pulled from the [The National UFO Reporting Center Online Database]
 The raw data was 2.5GB and required a decent amount of preparation prior to analysis. We downloaded a zipped json file that included the raw HTML for each individual sighting. Cleaning and preparation methods included:
 
 - Extracting the unique observation ID, date, time, location, shape and text description of the sightings
-    - Shape refers to the "shape" of the UFO, and can include circle, fireball, light, or be unspecified
+    - First we used Beautiful Soup's html parser to extract data contained within specific HTML tags
+    - Regular expressions were utilized to extract the exact terms we needed to run analyis on the different features
 - Separating the text description from the follow-up notes
 - Putting the information into a pandas datafram for easier analysis
+
+
 
 
 <details>
@@ -63,6 +66,15 @@ The cleaned up pandas dataframe is shown below
     <td><img src='img/binary_bar_chart.png' align='center' width="400"></td>
 </p>
 </details>
+
+
+## Natural Language Processing
+The data was analyzed using a combination of nltk packages and sklearns CountVectorizer/TFIDFVectorizer to analysis the most common latent features within the observations. The pipeline used on each observation was
+
+1. Tokenization of observations 
+2. Stop Words removal
+3. Lemmitization using nltk WordNetLemmatizer
+4. 
 
 
 ## Summary and Key Findings
