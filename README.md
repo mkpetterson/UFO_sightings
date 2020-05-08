@@ -82,6 +82,12 @@ The data was analyzed using a combination of nltk packages and sklearns CountVec
 4. TFIDFVectorizer to get the relative word strength
 5. Topic Modeling using Non-negative Matrix Factorization (NMF)
 
+Fitting the Model:
+<img alt="vanilla topics" src='images/vanilla_model.png'>
+
+Top 10 Topics:
+<img alt="vanilla topics" src='images/vanilla_topics.png'>
+
 
 
 
