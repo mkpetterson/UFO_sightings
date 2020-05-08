@@ -31,7 +31,6 @@ The raw data was 2.5GB and required a decent amount of preparation prior to anal
 
 
 
-
 <details>
     <summary>Raw JSON data</summary>
     <img alt="Data" src='images/json_data.png'>
@@ -49,23 +48,17 @@ The cleaned up pandas dataframe is shown below
 
 ### Exploratory Data Analysis
 
+The sightings described the UFOs as various different shapes, including circles, chevrons, lights, or fireballs. The duration of the sightings lasted from a few seconds to many minutes. 
 
-<details>
-    <summary>Name</summary>
-<img alt="Heatmap" src='img/corr_heatmap.png' style='width: 600px;'>
-</details>
 
-<details>
-    <summary>Name</summary>
-<img alt="Histograms" src='img/histograms_of_features.png'>
-</details>
+Shapes and Duration
+<img alt="shapes" src='images/shape_duration.png' style='width: 600px;'>
 
-<details>
-    <summary>Name</summary>
-<p align='middle'>
-    <td><img src='img/binary_bar_chart.png' align='center' width="400"></td>
-</p>
-</details>
+
+The time of day for the observations were also interesting. Sightings tended to be higher in the early morning or evening hours, which makes sense as UFO lights will not be as visible during daylight hours. It's also possible many people mistake planets, satellites, or planes as UFOs.  
+
+<img alt="timeofday" src='images/time_of_day.png'>
+
 
 
 ## Natural Language Processing
