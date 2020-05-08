@@ -41,6 +41,8 @@ The raw data was 2.5GB and required a decent amount of preparation prior to anal
     <img alt="Data" src='images/sample_report.png'>
 </details>    
     
+<br>    
+    
 The cleaned up pandas dataframe is shown below
     
   <img src='images/data_head.png'>
