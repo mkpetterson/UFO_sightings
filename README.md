@@ -50,7 +50,7 @@ Cleaning and preparation methods included:
     
 The cleaned up pandas dataframe is shown below
     
-  <img src='images/data_head.png'>
+  <img src='images/initial_df.png'>
 
 
 ### Exploratory Data Analysis
