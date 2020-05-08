@@ -51,17 +51,17 @@ The cleaned up pandas dataframe is shown below
 
 
 <details>
-    <summary>Correlation Heatmap</summary>
+    <summary>Name</summary>
 <img alt="Heatmap" src='img/corr_heatmap.png' style='width: 600px;'>
 </details>
 
 <details>
-    <summary>Histogram of Features</summary>
+    <summary>Name</summary>
 <img alt="Histograms" src='img/histograms_of_features.png'>
 </details>
 
 <details>
-    <summary>Binary Features Bar Chart</summary>
+    <summary>Name</summary>
 <p align='middle'>
     <td><img src='img/binary_bar_chart.png' align='center' width="400"></td>
 </p>
@@ -69,14 +69,30 @@ The cleaned up pandas dataframe is shown below
 
 
 ## Natural Language Processing
-The data was analyzed using a combination of nltk packages and sklearns CountVectorizer/TFIDFVectorizer to analysis the most common latent features within the observations. The pipeline used on each observation was
+The data was analyzed using a combination of nltk packages and sklearns CountVectorizer/TFIDFVectorizer to analysis the most common words within the observations. We also used topic modeling to extract latent features of the text. The pipeline used on each observation was:
 
-1. Tokenization of observations 
-2. Stop Words removal
+1. Tokenization of text observations 
+2. Stop Words removal (standard English)
 3. Lemmitization using nltk WordNetLemmatizer
-4. 
+4. TFIDFVectorizer to get the relative word strength
+5. Topic Modeling using Non-negative Matrix Factorization (NMF)
 
+
+
+
+
+Using this pipeline allowed us to visualize the most common words for the observations. 
+
+<b>UFO Sightings</b>
+<img alt="ufowords" src='images/UFO_words.png'>
+
+<b>Notes on the UFO Sightings</b>
+<img alt="ufonoteswords" src='images/UFO_notes_words.png'>
+
+<b>Bigfoot Sightings</b>
+<img alt="bigfootwords" src='images/bigfoot_words.png'>
 
 ## Summary and Key Findings
 
-### Recommendations
+
+
