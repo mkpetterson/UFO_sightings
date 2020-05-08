@@ -106,4 +106,4 @@ Using this pipeline allowed us to visualize the most common words for the observ
 ## Summary and Key Findings
 
 
-
+<img alt="Data" src='images/ufo.jpeg'>
