@@ -21,15 +21,16 @@ The data was pulled from the [The National UFO Reporting Center Online Database]
 
 ### Data Preparation
 
-The raw data was 2.5GB and required a decent amount of preparation prior to analysis. We downloaded a zipped json file that included the raw HTML for each individual sighting. Cleaning and preparation methods included:
+The raw data was 2.5GB and required a decent amount of preparation prior to analysis. We downloaded a zipped json file that included the raw HTML for each individual sighting.
+
+Cleaning and preparation methods included:
 
 - Extracting the unique observation ID, date, time, location, shape and text description of the sightings
     - First we used Beautiful Soup's html parser to extract data contained within specific HTML tags
+    - Limited data to about 15,000 in order for it to not run forever
     - Regular expressions were utilized to extract the exact terms we needed to run analyis on the different features
 - Separating the text description from the follow-up notes
 - Putting the information into a pandas datafram for easier analysis
-
-
 
 <details>
     <summary>Raw JSON data</summary>
