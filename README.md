@@ -76,11 +76,7 @@ We got a count of the states and sightings. It seems California is number one fo
 ## Natural Language Processing
 The data was analyzed using a combination of nltk packages and sklearns CountVectorizer/TFIDFVectorizer to analysis the most common words within the observations. We also used topic modeling to extract latent features of the text. The pipeline used on each observation was:
 
-1. Tokenization of text observations 
-2. Stop Words removal (standard English)
-3. Lemmitization using nltk WordNetLemmatizer
-4. TFIDFVectorizer to get the relative word strength
-5. Topic Modeling using Non-negative Matrix Factorization (NMF)
+### Baseline Model using SkLearn
 
 Fitting the Model:
 <img alt="vanilla topics" src='images/vanilla_model.png'>
@@ -88,9 +84,23 @@ Fitting the Model:
 Top 10 Topics:
 <img alt="vanilla topics" src='images/vanilla_topics.png'>
 
+Custom Language Processing with NLTK
 
+1. Tokenization of text observations, Stop Words removal (standard English)
 
+<img alt="cleaning words" src='cleaning.png'>
 
+3. Lemmitization using nltk WordNetLemmatizer
+
+<img alt="lemmatizing" src='lemma.png'>
+
+4. TFIDFVectorizer to get the relative word strength
+
+<img alt="Vectorizing with additional features" src='vectorizer2.png'>
+
+5. Topic Modeling using Non-negative Matrix Factorization (NMF)
+
+<img alt='fitting model 2' src='cluster2.png'>
 
 Using this pipeline allowed us to visualize the most common words for the observations. 
 
