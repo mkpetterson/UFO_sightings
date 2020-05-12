@@ -96,7 +96,7 @@ Custom Language Processing with NLTK
 
 4. TFIDFVectorizer to get the relative word strength
 
-<img alt="Vectorizing with additional features" src='images/vectorizer2.png'>
+<img alt="Vectorizing with additional features" src='images/vectorize2.png'>
 
 5. Topic Modeling using Non-negative Matrix Factorization (NMF)
 
