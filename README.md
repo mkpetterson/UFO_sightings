@@ -88,19 +88,19 @@ Custom Language Processing with NLTK
 
 1. Tokenization of text observations, Stop Words removal (standard English)
 
-<img alt="cleaning words" src='cleaning.png'>
+<img alt="cleaning words" src='images/cleaning.png'>
 
 3. Lemmitization using nltk WordNetLemmatizer
 
-<img alt="lemmatizing" src='lemma.png'>
+<img alt="lemmatizing" src='images/lemma.png'>
 
 4. TFIDFVectorizer to get the relative word strength
 
-<img alt="Vectorizing with additional features" src='vectorizer2.png'>
+<img alt="Vectorizing with additional features" src='images/vectorizer2.png'>
 
 5. Topic Modeling using Non-negative Matrix Factorization (NMF)
 
-<img alt='fitting model 2' src='cluster2.png'>
+<img alt='fitting model 2' src='images/cluster2.png'>
 
 Using this pipeline allowed us to visualize the most common words for the observations. 
 
