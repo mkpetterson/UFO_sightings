@@ -58,7 +58,7 @@ The cleaned up pandas dataframe is shown below
 The sightings described the UFOs as various different shapes, including circles, chevrons, lights, or fireballs. The duration of the sightings lasted from a few seconds to many minutes. 
 
 
-**Shapes and Duration**
+**Shapes and Duration** <br>
 <img alt="shapes" src='images/shape_duration.png' style='width: 600px;'>
 
 
@@ -74,35 +74,26 @@ We got a count of the states and sightings. It seems California is number one fo
 
 
 ## Natural Language Processing
-The data was analyzed using a combination of nltk packages and sklearns CountVectorizer/TFIDFVectorizer to analysis the most common words within the observations. We also used topic modeling to extract latent features of the text. The pipeline used on each observation was:
+The data was analyzed using a combination of nltk packages and sklearn CountVectorizer/TFIDFVectorizer to analyze the most common words within the observations. The output of the TFIDF transformation was deconstructed using two methods: 
+1. Non-Negative Matrix Factorization (NMF) 
+2. Singular Value Decomposition (SVD) combined with Kmeans 
+
+Both of these methods allowed extraction of latent topics. <br>
+
 
 ### Baseline Model using SkLearn
 
-Fitting the Model:
+The corpus (documents) was prepared using standard methods:
+- Tokenization
+- Stop words removal (standard English)
+- Lemmatization using nltk WordNetLemmatizer
+- TFIDF Vectorization to get the relative word strengh
+
+Fitting the Model and NMF:
 <img alt="vanilla topics" src='images/vanilla_model.png'>
 
-Top 10 Topics:
-<img alt="vanilla topics" src='images/vanilla_topics.png'>
 
-Custom Language Processing with NLTK
 
-1. Tokenization of text observations, Stop Words removal (standard English)
-
-<img alt="cleaning words" src='images/cleaning.png'>
-
-3. Lemmitization using nltk WordNetLemmatizer
-
-<img alt="lemmatizing" src='images/lemma.png'>
-
-4. TFIDFVectorizer to get the relative word strength
-
-<img alt="Vectorizing with additional features" src='images/vectorize2.png'>
-
-5. Topic Modeling using Non-negative Matrix Factorization (NMF)
-
-<img alt='fitting model 2' src='images/cluster2.png'>
-
-Using this pipeline allowed us to visualize the most common words for the observations. 
 
 <b>UFO Sightings</b>
 <img alt="ufowords" src='images/UFO_words.png'>
