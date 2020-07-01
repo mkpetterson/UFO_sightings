@@ -98,17 +98,6 @@ SVD + kmeans topics:<br>
 <img alt="svd" src='images/svd_clusters.png'>
 
 
-
-
-<b>UFO Sightings</b>
-<img alt="ufowords" src='images/UFO_words.png'>
-
-<b>Notes on the UFO Sightings</b>
-<img alt="ufonoteswords" src='images/UFO_notes_words.png'>
-
-<b>Bigfoot Sightings</b>
-<img alt="bigfootwords" src='images/bigfoot_words.png'>
-
 ## Summary and Key Findings
 
 
