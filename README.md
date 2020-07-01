@@ -81,16 +81,21 @@ The data was analyzed using a combination of nltk packages and sklearn CountVect
 Both of these methods allowed extraction of latent topics. <br>
 
 
-### Baseline Model using SkLearn
-
 The corpus (documents) was prepared using standard methods:
 - Tokenization
 - Stop words removal (standard English)
 - Lemmatization using nltk WordNetLemmatizer
 - TFIDF Vectorization to get the relative word strengh
 
-Fitting the Model and NMF:
-<img alt="vanilla topics" src='images/vanilla_model.png'>
+
+The results from the NMF and SVD+kmeans are shown below. 
+
+
+NMF topics:<br>
+<img alt="nmf" src='images/nmf_clusters.png'>
+
+SVD + kmeans topics:<br>
+<img alt="svd" src='images/svd_clusters.png'>
 
 
 
